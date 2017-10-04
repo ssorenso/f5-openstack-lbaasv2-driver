@@ -9,7 +9,7 @@ SSH_CMD="ssh -i /home/jenkins/.ssh/id_rsa_testlab -o StrictHostKeyChecking=no te
 BIGIP_IP=`${SSH_CMD} "cat /home/testlab/ve_mgmt_ip"`
 BIGIP_IP=${BIGIP_IP%%[[:cntrl:]]}
 NETWORK_TYPES=${TEST_TENANT_NETWORK_TYPE}
-AGENT_LOC=git+https://github.com/F5Networks/f5-openstack-agent.git@${BRANCH}
+AGENT_LOC=git+https://github.com/richbrowne/f5-openstack-agent@liberty
 DRIVER_LOC=git+https://github.com/F5Networks/f5-openstack-lbaasv2-driver.git@${BRANCH}
 NEUTRON_DRIVER_LOC=https://raw.githubusercontent.com/F5Networks/neutron-lbaas/${RBANCH}/neutron_lbaas/drivers/f5/driver_v2.py
 

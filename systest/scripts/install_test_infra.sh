@@ -35,7 +35,7 @@ git clone -b ${BRANCH} ${DEVTEST_REPO} ${DEVTEST_DIR}
 
 # This should be listed in requirement.test.txt also, but will not succeed
 # from that location without sudo
-sudo pip install git+https://github.com/F5Networks/f5-openstack-agent.git@${BRANCH}
+sudo pip install git+https://github.com/richbrowne/f5-openstack-agent@liberty
 # Install neutron at stable/mitaka because stable/liberty tests will not work
 # because they use an upper contraints file in the installation script that
 # neutron-lbaas uses for tox tests.
