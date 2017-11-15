@@ -84,7 +84,6 @@ EOF
     def __get_connection(cls):
         results = cls.__exec_shell(cls.__extract_neutron_cfg, shell=True)
         cls._handle_results(results)
-        pdb.set_trace()
         for line in results.stdout.split("\n"):
             match = cls.__line_parse.search(line)
             if match:
